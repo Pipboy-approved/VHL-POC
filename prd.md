@@ -40,7 +40,7 @@ MENU-ITEM > div
 SPA > div
 SPA-STAGE > div
 
-After solution creation it should be uploaded to Github https://github.com/Pipboy-approved/lvh
+After solution creation it should be uploaded to Github https://github.com/Pipboy-approved/vhl
 
 1.3 Styling (CSS) in application
 
