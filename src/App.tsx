@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 interface MenuItem {
     title: string;
@@ -6,12 +6,11 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-    { title: 'Home', content: 'Welcome to our website! Here you can find all the information you need.' },
-    { title: 'Products', content: 'Browse our wide range of products and services.' },
-    { title: 'Services', content: 'We offer various professional services to meet your needs.' },
-    { title: 'About', content: 'Learn more about our company and our mission.' },
-    { title: 'Contact', content: 'Get in touch with us for any inquiries.' },
-    { title: 'Blog', content: 'Read our latest articles and updates.' },
+    { title: 'Transactions', content: 'Manage your transactions here.' },
+    { title: 'Investing', content: 'Explore investment opportunities.' },
+    { title: 'Loan/leasing', content: 'Find loan and leasing options.' },
+    { title: 'Insurance', content: 'Get information on insurance plans.' },
+    { title: 'Pension', content: 'Plan your pension with us.' },
     { title: 'Support', content: 'Need help? Our support team is here for you.' }
 ];
 
@@ -31,7 +30,7 @@ function App() {
                     </div>
                 ))}
             </div>
-            <div id="product">
+            <div className="product">
                 <h2>{selectedItem.title}</h2>
                 <p>{selectedItem.content}</p>
             </div>
