@@ -50,12 +50,13 @@ hr {
     box-shadow: 5px 5px 10px #777;
 }
 
-.menu-item:hover + .product {
-    opacity: 1.0;
+.product {
+    overflow: hidden;
+    opacity: 0.2;
 }
 
-.product {
-    opacity: 0.2;
+.menu-container:hover + .product, .product:hover {
+    opacity: 1.0;
 }
 
 .product-content {
