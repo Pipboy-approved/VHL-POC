@@ -50,8 +50,12 @@ hr {
     box-shadow: 5px 5px 10px #777;
 }
 
+.menu-item:hover + .product {
+    opacity: 1.0;
+}
+
 .product {
-    height: calc(100% - 50px);
+    opacity: 0.2;
 }
 
 .product-content {

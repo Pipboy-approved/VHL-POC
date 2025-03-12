@@ -20,7 +20,7 @@ function App() {
 
     return (
         <>
-            <div id="logo">&nbsp;</div>
+            <div id="logo" title="Tätte topeltgarantii">&nbsp;</div>
             <div className="menu-container">
                 {menuItems.map((item) => (
                     <div
@@ -33,7 +33,6 @@ function App() {
                     </div>
                 ))}
             </div>
-            <div className="product-menu">1</div>
             <div className="product">
                 <div className="product-content">
                 <h2>{selectedItem.title}</h2>
@@ -49,4 +48,4 @@ function App() {
     );
 }
 
-export default App; 
+export default App;
