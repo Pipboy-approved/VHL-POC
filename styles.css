@@ -1,53 +1,74 @@
 body {
-    margin: 0;
-    padding: 3%;
+    background: #333;
+    color: #999;
     font-family: Verdana, sans-serif;
     font-size: 1vw;
-    color: #ddd;
-    background: #333;
+    margin: 0;
+    padding: 3%;
 }
 
 .menu-container, .product {
+    align-items: center;
+    background: #444;
+    border: solid 1px #555;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     flex-flow: row nowrap;
     justify-content: center;
-    align-items: center;
     margin-bottom: 3vh;
-    background: #444;
     padding: 3%;
-    border: solid 1px #555;
-    border-radius: 10px;
     transition: 0.5s;
 }
 
 .menu-item {
-    padding: 3%;
-    background: #555;
+    background-color: #555;
     border: solid 1px #666;
     border-radius: 10px;
     cursor: pointer;
+    flex-grow: 1;
+    margin: 1%;
+    padding: 3%;
     transition: 0.5s;
+    text-align: center;
+    font-size: 1.2vw;
+    font-weight: bold;
 }
 
-.menu-container:hover, .product:hover, .menu-item:hover {
-    box-shadow: 5px 5px 10px #777;
+.menu-container:hover, .product:hover {
+    border: solid 1px #666;
+    box-shadow: 5px 5px 10px #555;
 }
 
 .menu-item:hover {
-    background: #555;
+    background-color: #444;
+    border: solid 1px #777;
+    box-shadow: 5px 5px 10px #777;
 }
 
 .product {
-    height: 100%;
+    height: calc(100% - 50px);
 }
 
+#logo {
+    background-image: url(/img/pip.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 1px #444;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #333;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
 h2 {
-    color: #333;
+    color: #777;
     margin-top: 0;
 }
 
 p {
-    color: #666;
-    line-height: 1.6;
+    color: #777;
 }
