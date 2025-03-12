@@ -7,7 +7,11 @@ body {
     padding: 3%;
 }
 
-.menu-container, .product {
+hr {
+    border: solid 1px #555;
+}
+
+.menu-container, .product, .product-menu {
     align-items: center;
     background: #444;
     border: solid 1px #555;
@@ -35,7 +39,7 @@ body {
     font-weight: bold;
 }
 
-.menu-container:hover, .product:hover {
+.menu-container:hover, .product:hover, .product-menu:hover {
     border: solid 1px #666;
     box-shadow: 5px 5px 10px #555;
 }
@@ -48,6 +52,20 @@ body {
 
 .product {
     height: calc(100% - 50px);
+}
+
+.product-content {
+    width: 50%;
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    float: right;
+}
+.product-image-container {
+    width: 50%;
 }
 
 #logo {

@@ -33,15 +33,18 @@ function App() {
                     </div>
                 ))}
             </div>
-            <div className="product-container">
-                <div id="product">
-
-                </div>
-            </div>
+            <div className="product-menu">1</div>
             <div className="product">
+                <div className="product-content">
                 <h2>{selectedItem.title}</h2>
                 <p>{selectedItem.content}</p>
+                </div>
+                <div className="product-image-container">
+                    <img className="product-image" src="/img/pip.jpg" alt={selectedItem.title} />
+                </div>
             </div>
+            <hr/>
+            <p>Pipboy OÜ | 2025 | Unlicensed license model</p>
         </>
     );
 }
