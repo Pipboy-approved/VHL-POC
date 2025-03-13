@@ -2,7 +2,7 @@ Section 1.0 Overview
 
 We have created a web application named "VHL portal" that is a Single Page Application (SPA).
 
-- The application is a Vite app with React and TypeScript, using only raw CSS for styling.
+- The application is a Vite app with React and TypeScript, using a single `styles.css` file for styling, located in the root directory.
 - The application features a dynamic menu and content area that updates based on user interaction.
 
 Important! Every time before You make changes, confirm that these comply with prd.md
@@ -16,12 +16,8 @@ File structure:
 
 Components:
 - The app spans across the screen of the browser.
-- It includes a MENU and SPA area that responds to selections made in the menu.
-- The MENU is a `div` tag that spans across the screen and acts as a Flex Container for MENU-ITEMS.
-- The SPA is a `div` tag that spans across the screen and acts as a Flex Container for SPA-STAGE.
-- MENU-ITEMS include: Transactions, Investing, Loan/leasing, Insurance, Pension, and Support.
-- Each menu item has a unique ID for easy identification and interaction.
-- The application includes a logo positioned at the top left corner of the screen.
+- It includes a MENU with `.menu-item` divs that, when hovered over, change the `.product-menu` to `display: block` and `opacity: 1.0`.
+- The SPA area displays content based on the selected menu item.
 
 1.2 HTML elements in application
 
@@ -55,5 +51,12 @@ Additional requirements
 - In the main window, the body element of HTML has background color #333.
 - All used text is by default Verdana, 1vw, and color #ddd.
 
+Styling:
+- A single CSS file in the root directory, `styles.css`, is used for all styling.
+- The `.menu-item` class has a hover effect that changes the `.product-menu` to `display: block` and `opacity: 1.0`.
+
 1.3 Scripts in application
 - All TypeScript files are located in the `src` folder.
+- The main entry point is `main.tsx`, which is loaded as a module in `index.html`.
+
+After solution creation, it should be uploaded to the GitHub repository at https://github.com/Pipboy-approved/fit.

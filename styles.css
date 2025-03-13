@@ -8,6 +8,7 @@ body {
 }
 
 hr {
+    transition: 1.0s;
     border: solid 1px #555;
 }
 
@@ -52,11 +53,15 @@ hr {
 
 .product {
     overflow: hidden;
-    opacity: 0.2;
+    opacity: 0.0;
+    height: 0vh;
+    padding: 0%;
 }
 
 .menu-container:hover + .product, .product:hover {
     opacity: 1.0;
+    padding: 10px;
+    height: 100%;
 }
 
 .product-content {

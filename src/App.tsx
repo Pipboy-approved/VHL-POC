@@ -7,9 +7,9 @@ interface MenuItem {
 }
 
 const menuItems: MenuItem[] = [
-    { title: 'Transactions', content: 'Manage your transactions here.', ID: 'transactions' },
+    { title: 'Daily banking', content: 'Manage your transactions here.', ID: 'transactions' },
     { title: 'Investing', content: 'Explore investment opportunities.', ID: 'investing' },
-    { title: 'Loan/leasing', content: 'Find loan and leasing options.', ID: 'loan-leasing' },
+    { title: 'Loan', content: 'Find loan and leasing options.', ID: 'loan-leasing' },
     { title: 'Insurance', content: 'Get information on insurance plans.', ID: 'insurance' },
     { title: 'Pension', content: 'Plan your pension with us.', ID: 'pension' },
     { title: 'Support', content: 'Need help? Our support team is here for you.', ID: 'support' }
@@ -39,7 +39,7 @@ function App() {
                 <p>{selectedItem.content}</p>
                 </div>
                 <div className="product-image-container">
-                    <img className="product-image" src="/img/pip.jpg" alt={selectedItem.title} />
+                    <img className="product-image" src={"/img/" + selectedItem.title + ".jpg"} title={selectedItem.title} />
                 </div>
             </div>
             <hr/>
