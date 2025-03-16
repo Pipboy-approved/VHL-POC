@@ -15,6 +15,7 @@ const menuItems: MenuItem[] = [
     { title: 'Support', content: 'Need help? Our support team is here for you.', ID: 'support' }
 ];
 
+
 function App() {
     const [selectedItem, setSelectedItem] = useState<MenuItem>(menuItems[0]);
 

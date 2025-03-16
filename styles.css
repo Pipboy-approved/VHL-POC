@@ -5,6 +5,7 @@ body {
     font-size: 1vw;
     margin: 0;
     padding: 3%;
+    overflow-y: scroll;
 }
 
 hr {
